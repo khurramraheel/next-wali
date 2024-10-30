@@ -13,7 +13,7 @@ export default function Header(){
 
   return <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <Link href="/">
-      <h1 className={styles.hello}>FSD</h1>
+      <h1 className={styles.hello}>Lyalpur</h1>
     </Link>
 
     <a className="navbar-brand" href="#">
