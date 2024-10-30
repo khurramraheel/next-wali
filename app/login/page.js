@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 // nested-routing
 
-export default()=>{
+export default function Page(){
 
     // programmtically router change krne keliye
     // useRouter() ka hook hota

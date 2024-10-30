@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import './card.css';
 
-export default({meraAd, m})=>{
+export default function Card({meraAd, m}){
 
     return <div className="card" style={{ width: "18rem" }}>
         <Link href={"/product-detail/"+meraAd.name}>

@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 
-export default ()=>{
+export default function Page(){
 
 const addKaro = async ()=>{
   

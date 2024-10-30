@@ -4,7 +4,7 @@ import { Provider, useSelector } from 'react-redux';
 import './styles.css';
 import { meraStore } from '@/store/store';
 
-export default()=>{
+export default function Page(){
     return <Provider store={meraStore}>
         <Cart></Cart>
     </Provider>
@@ -26,8 +26,8 @@ function Cart(){
     return <div>
       <table>
         {
-          cartItems.map((item)=>{
-            return <tr>
+          cartItems.map((item, i)=>{
+            return <tr key={i}>
               <td><img width="40"  src={item.src} /></td>
               <td>{item.name}</td>
               <td>{item.price}</td>

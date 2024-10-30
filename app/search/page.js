@@ -2,8 +2,15 @@
 import Card from "@/components/card/card";
 import { ads } from "../data";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from 'react'
 
-export default()=>{
+export default function Page(){
+  return <Suspense>
+          <Search></Search>
+        </Suspense>;
+}
+
+ function Search(){
 
     // URL
     // /search?name=ali&city=fsd&uni=gc
@@ -20,8 +27,8 @@ export default()=>{
         if(ad.name.toLowerCase().includes(searchText)){
             return true;
         }
-     }).map((a2)=>{
-       return <Card meraAd={a2}></Card>
+     }).map((a2, index)=>{
+       return <Card key={index} meraAd={a2}></Card>
      })
     }
 

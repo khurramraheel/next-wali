@@ -1,8 +1,8 @@
 import styles from './footer.module.css';
 
-export default()=>{
+export default function Footer(){
 
-    return <div  className={styles.hello}>
+return <div  className={styles.hello}>
       <h1>yeh footer h</h1>
 
   <span className={styles.new}>this is blue</span>

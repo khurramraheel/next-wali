@@ -1,11 +1,11 @@
 
 
-export default()=>{
+export default function Page(){
 
     return <div>
 
-<input ref={nameRef} /> <br />
-<input ref={passwordRef} /> <br />
+<input  /> <br />
+<input  /> <br />
 <button>Signup karo</button>
 
     </div>

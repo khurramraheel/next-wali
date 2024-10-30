@@ -9,7 +9,7 @@ import { addToCart } from '@/store/slices/product';
 import { Provider, useDispatch } from 'react-redux';
 import { meraStore } from '@/store/store';
 
-export default()=>{
+export default function Page(){
   return <Provider store={meraStore}>
       <ProductDetail></ProductDetail>
   </Provider>

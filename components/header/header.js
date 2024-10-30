@@ -5,16 +5,16 @@ import styles from './header.module.css'
 import { useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default()=>{
+export default function Header(){
 
   let route = useRouter();
 
   let searchRef = useRef();
 
-    return <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link href="/">
-        <h1 className={styles.hello}>FSD</h1>
-      </Link>
+  return <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <Link href="/">
+      <h1 className={styles.hello}>FSD</h1>
+    </Link>
 
     <a className="navbar-brand" href="#">
       Navbar
@@ -57,23 +57,23 @@ export default()=>{
             Cart
           </Link>
         </li>
-      </ul>      
-        <input
+      </ul>
+      <input
         ref={searchRef}
-          className="form-control mr-sm-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button onClick={()=>{
+        className="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button onClick={() => {
 
-        route.push('/search?q='+searchRef.current.value)
+        route.push('/search?q=' + searchRef.current.value)
 
-        }} className="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>      
+      }} className="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
     </div>
   </nav>
-  
+
 
 }

@@ -1,6 +1,6 @@
 import { useRef } from "react"
 
-export default({addKaro})=>{
+export default function AddMeeting({addKaro}){
 
     let nameRef = useRef();
     let cityRef = useRef();

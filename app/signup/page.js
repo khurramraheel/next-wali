@@ -11,7 +11,7 @@ import { meraStore } from "@/store/store";
 import axios from "axios";
 
 
-export default()=>{
+export default function Page(){
 
     return <Provider store={meraStore}>
             <Signup></Signup>

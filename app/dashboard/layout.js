@@ -1,6 +1,6 @@
 import Nav from "@/components/nav/nav"
 
-export default({children})=>{
+export default function Page({children}){
 
     return <div>
 

@@ -2,7 +2,7 @@
 import ReactPlayer from 'react-player'
 import YouTube from 'react-youtube';
 
-export default()=>{
+export default function Video(){
 
 
     return <div>
